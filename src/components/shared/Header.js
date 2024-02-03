@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import Image from "next/image";
-import HeaderImage from "@/assets/logo.jpg";
+import HeaderImage from "@/assets/TheDragonNews.png";
 import { getCurrentDate } from "@/utils/getCurrentDate";
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
       <Container>
         <Image
           src={HeaderImage}
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           alt="logo"
           className="mx-auto"
         />

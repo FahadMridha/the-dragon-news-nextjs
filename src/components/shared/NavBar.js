@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import Image from "next/image";
 import { IconButton, Stack } from "@mui/material";
 
@@ -54,7 +54,7 @@ function NavBar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box className="w-full text-center">
-              <Image src={logo} width={100} height={10} alt="logo" />
+              <Image src={logo} width={100} height={100} alt="logo" />
               {navItems.map((item) => (
                 <Link key={item} href={item.pathname}>
                   <Button className="text-white">{item.route}</Button>
