@@ -113,7 +113,7 @@ const LatestNews = () => {
       </CardActionArea>
            </Card> 
   </Grid>
-</Grid>
+      </Grid>
         </Box>
     );
 };
