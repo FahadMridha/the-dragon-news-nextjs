@@ -1,10 +1,21 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
-import sideBarImage from "@/assets/sideTopNews.png"
+import sideBarImage from "@/assets/sideTopNews.png";
+import sideBarImage2 from "@/assets/sideBarDown.png";
 
 const SideBar = () => {
   return (
-    <Box className='my-5'>
+    <Box className="my-5">
       <Card>
         <CardActionArea>
           <CardMedia>
@@ -27,6 +38,88 @@ const SideBar = () => {
           </CardContent>
         </CardActionArea>
       </Card>
+      <Box>
+        <Grid container spacing={5} className="mt-5">
+          <Grid item lg={3}>
+            <Avatar
+              sx={{ width: 56, height: 56,borderRadius:"5px" }}
+              alt="Remy Sharp"
+              variant="square"
+              src="/static/images/avatar/1.jpg"
+            />
+          </Grid>
+          <Grid item lg={9}>
+            <h1 className="w-full">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h1>
+            <Typography variant="body2" color="gray">
+            Mar 18 2023
+            </Typography>
+          </Grid>
+          <Divider />
+          <Grid item lg={3}>
+            <Avatar
+              sx={{ width: 56, height: 56,borderRadius:"5px" }}
+              alt="Remy Sharp"
+              variant="square"
+              src="/static/images/avatar/1.jpg"
+            />
+          </Grid>
+          <Grid item lg={9}>
+          <h1 className="w-full">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h1>
+            <Typography variant="body2" color="gray">
+            Mar 18 2023
+            </Typography>
+          </Grid>
+          <Divider />
+          <Grid item lg={3}>
+            <Avatar
+              sx={{ width: 56, height: 56,borderRadius:"5px" }}
+              alt="Remy Sharp"
+              variant="square"
+              src="/static/images/avatar/1.jpg"
+            />
+          </Grid>
+          <Grid item lg={9}>
+          <h1 className="w-full">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h1>
+            <Typography variant="body2" color="gray">
+            Mar 18 2023
+            </Typography>
+          </Grid>
+          <Divider />
+          <Grid item lg={3}>
+            <Avatar
+              sx={{ width: 56, height: 56,borderRadius:"5px" }}
+              alt="Remy Sharp"
+              variant="square"
+              src="/static/images/avatar/1.jpg"
+            />
+          </Grid>
+          <Grid item lg={9}>
+          <h1 className="w-full">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h1>
+            <Typography variant="body2" color="gray">
+            Mar 18 2023
+            </Typography>
+          </Grid>
+          <Divider />
+          <Grid item lg={3}>
+            <Avatar
+              sx={{ width: 56, height: 56,borderRadius:"5px" }}
+              alt="Remy Sharp"
+              variant="square"
+              src="/static/images/avatar/1.jpg"
+            />
+          </Grid>
+          <Grid item lg={9}>
+          <h1 className="w-full">Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it </h1>
+            <Typography variant="body2" color="gray">
+            Mar 18 2023
+            </Typography>
+          </Grid>
+          <Divider />
+        </Grid>
+      </Box>
+      <Box className='mt-24'>
+      <Image src={sideBarImage2} width={800} alt="Last News" />
+      </Box>
     </Box>
   );
 };
