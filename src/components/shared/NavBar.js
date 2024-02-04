@@ -53,8 +53,8 @@ function NavBar() {
       <AppBar position="static" className="bg-black">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Box className="w-full text-center">
               <Image src={logo} width={100} height={100} alt="logo" />
+            <Box className="w-full text-center">
               {navItems.map((item) => (
                 <Link key={item} href={item.pathname}>
                   <Button className="text-white">{item.route}</Button>
