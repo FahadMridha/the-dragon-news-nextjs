@@ -50,46 +50,48 @@ function NavBar() {
   return (
     <>
       <Header />
-      <AppBar position="static" className="bg-black">
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
+      <Box>
+        <AppBar position="static" className="bg-black">
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
               <Image src={logo} width={100} height={100} alt="logo" />
-            <Box className="w-full text-center">
-              {navItems.map((item) => (
-                <Link key={item} href={item.pathname}>
-                  <Button className="text-white">{item.route}</Button>
-                </Link>
-              ))}
-            </Box>
-            <Box>
-              <Stack
-                direction="row"
-                sx={{
-                  "& svg": {
-                    color: "white",
-                  },
-                }}
-              >
-                <IconButton>
-                  <FacebookIcon />
-                </IconButton>
-                <IconButton>
-                  <LinkedInIcon />
-                </IconButton>
-                <IconButton>
-                  <InstagramIcon />
-                </IconButton>
-                <IconButton>
-                  <TwitterIcon />
-                </IconButton>
-                <IconButton>
-                  <YouTubeIcon />
-                </IconButton>
-              </Stack>
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
+              <Box className="w-full text-center">
+                {navItems.map((item) => (
+                  <Link key={item} href={item.pathname}>
+                    <Button className="text-white">{item.route}</Button>
+                  </Link>
+                ))}
+              </Box>
+              <Box>
+                <Stack
+                  direction="row"
+                  sx={{
+                    "& svg": {
+                      color: "white",
+                    },
+                  }}
+                >
+                  <IconButton>
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton>
+                    <LinkedInIcon />
+                  </IconButton>
+                  <IconButton>
+                    <InstagramIcon />
+                  </IconButton>
+                  <IconButton>
+                    <TwitterIcon />
+                  </IconButton>
+                  <IconButton>
+                    <YouTubeIcon />
+                  </IconButton>
+                </Stack>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      </Box>
     </>
   );
 }
